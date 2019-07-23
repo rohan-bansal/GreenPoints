@@ -20,8 +20,22 @@ body {
 }
 
 .challenges {
-  margin-top: 20%;
+  margin-top: 200px;
   text-align: center;
+}
+
+.challengebar {
+  margin: 0 auto;
+  left: 50%;
+  width: 100px;
+  height: 30px;
+  outline: 2px solid black;
+}
+
+.challengeprogress{
+  width: 1px;
+  height: 30px;
+  background-color: green;
 }
 
 .nav a:hover{
