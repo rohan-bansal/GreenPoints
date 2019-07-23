@@ -1,5 +1,6 @@
 body {
     background-color: #D3D3D3;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 .nav {
@@ -26,15 +27,14 @@ body {
 
 .challengebar {
   margin: 0 auto;
-  left: 50%;
-  width: 100px;
-  height: 30px;
+  width: 240px;
+  height: 10px;
   outline: 2px solid black;
 }
 
-.challengeprogress{
+#challengeprogress{
   width: 1px;
-  height: 30px;
+  height: 10px;
   background-color: green;
 }
 
