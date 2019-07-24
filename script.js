@@ -6,7 +6,12 @@ var challengeTwo = document.getElementById('challenge2');
 var challengeThree = document.getElementById('challenge3');
 var challenges = document.getElementsByClassName('challenges');
 var pointsText = document.getElementById('points');
-var finishButtOne = document.getElementById('finishButtonOne');
+//var finishButtOne = document.getElementById('finishButtonOne');
+//var finishButtonOne = document.getElementById('finishButtonOne');
+//var finishButtonTwo = document.getElementById('finishButtonTwo');
+//var finishButtonThree = document.getElementById('finishButtonThree');
+//var finishButtonFour = document.getElementById('finishButtonFour');
+//var finishButtonFive = document.getElementById('finishButtonFive');
 var greenPoints = 0;
 
 
@@ -29,6 +34,7 @@ function move() {
             move();
             generateChallenge3();
             timer();
+            showAll();
         } 
              timer();
             width += 1;
@@ -90,25 +96,25 @@ function generateChallenge() {
 
 function generateChallenge3(){
     var myArray = [
-        "Avoid single-use products, resort to reusable items",
-        "Make sure you turn off your lights when you leave a room" ,
-        "Bike, walk, or carpool your way to your destination" ,
-        "Don't waste food (compost or give it to someone in need)" ,
-        "Go vegan for one meal" ,
-        "Pick up ten pieces of trash" ,
-        "Save electricity by using natural lighting" ,
-        "Limit your water usage, re-use your water (from handwashing, showering, etc.) to water some plants" ,
-        "Support sustainable businesses" ,
-        "Inform someone about sustainability and or this website" ,
-        "Hang clothes to dry instead of using the dryer" ,
-        "Create a detailed shopping list that will avoid excess food and plastic",
-        "Take a cold shower" ,
-        "Convince someone to go vegetarian for a day" ,
+        "Avoid single-use products, resort to reusable items.",
+        "Make sure you turn off your lights when you leave a room." ,
+        "Bike, walk, or carpool your way to your destination." ,
+        "Don't waste food (compost or give it to someone in need)." ,
+        "Go vegan for one meal." ,
+        "Pick up ten pieces of trash." ,
+        "Save electricity by using natural lighting." ,
+        "Limit your water usage, re-use your water (from handwashing, showering, etc.) to water some plants." ,
+        "Support sustainable businesses." ,
+        "Inform someone about sustainability and or this website." ,
+        "Hang clothes to dry instead of using the dryer." ,
+        "Create a detailed shopping list that will avoid excess food and plastic.",
+        "Take a cold shower." ,
+        "Convince someone to go vegetarian for a day." ,
         "Install energy-efficient appliances." ,
-        "Donate or resell 6 unwanted item" ,
-        "Volunteer in an organization’s cleaning event" ,
-        "Plant something to offset your carbon footprint" ,
-        "Avoid buying clothes that were produced from fast fashion (i.e don’t buy “Made in China” products)" ,
+        "Donate or resell 6 unwanted item." ,
+        "Volunteer in an organization’s cleaning event." ,
+        "Plant something to offset your carbon footprint." ,
+        "Avoid buying clothes that were produced from fast fashion (i.e don’t buy “Made in China” products)." ,
         "Boycott products that endanger wildlife."
     ]; 
     
@@ -138,4 +144,47 @@ function generateChallenge3(){
     }
     document.getElementById("challenge5").innerHTML = myArray[seed++];
 
+}
+
+function hideOne(){
+    document.getElementById("challenge1").innerHTML += " ✓";
+    document.getElementById('finishButtonOne').style.visibility = "hidden";
+    document.getElementById('challenge1').style.color = "green";
+}
+
+function hideTwo(){
+    document.getElementById("challenge2").innerHTML += " ✓";
+    document.getElementById('finishButtonTwo').style.visibility = "hidden";
+    document.getElementById('challenge2').style.color = "green";
+}
+
+function hideThree(){
+    document.getElementById("challenge3").innerHTML += " ✓";
+    document.getElementById('finishButtonThree').style.visibility = "hidden";
+    document.getElementById('challenge3').style.color = "green";
+}
+
+function hideFour(){
+    document.getElementById("challenge4").innerHTML += " ✓";
+    document.getElementById('finishButtonFour').style.visibility = 'hidden';
+    document.getElementById('challenge4').style.color = "green";
+}
+
+function hideFive(){
+    document.getElementById("challenge5").innerHTML += " ✓";
+    document.getElementById('finishButtonFive').style.visibility = 'hidden';
+    document.getElementById('challenge5').style.color = "green";
+}
+
+function showAll(){
+    document.getElementById('finishButtonOne').style.visibility = 'visible';
+    document.getElementById('finishButtonTwo').style.visibility = 'visible';
+    document.getElementById('finishButtonThree').style.visibility = 'visible';
+    document.getElementById('finishButtonFour').style.visibility = 'visible';
+    document.getElementById('finishButtonFive').style.visibility = 'visible';
+    document.getElementById('challenge1').style.color = "black";
+    document.getElementById('challenge2').style.color = "black";
+    document.getElementById('challenge3').style.color = "black";
+    document.getElementById('challenge4').style.color = "black";
+    document.getElementById('challenge5').style.color = "black";
 }

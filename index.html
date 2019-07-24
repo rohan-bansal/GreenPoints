@@ -12,10 +12,20 @@
   <body>
 
     <div class="nav">
-      <a href="#home" style="float: left;">Green Points</a>
-      <a href="#profile" class="navRight">Profile</a>
-      <a href="#friends" class="navRight">Friends</a>
+      <a href="home.html" style="float: left;">Green Points</a>
+      <a href="index.html" class="navRight">Challenges</a>
+      <a href="profile.html" class="navRight">Profile</a>
+      <a href="friends.html" class="navRight">Friends</a>
     </div>
+
+    <div class="greenPoints">
+      <h1 id="pointcounter" style="display:inline-block;">Green Points:</h1>
+      <h1 id="points" style="display:inline-block;"></h1>
+      <h1 id="clickCount" style="display:inline-block;"></h1>
+    </div>
+
+    
+      
 
     <p id="timer">00:00</p>
     <script>timer();</script>
@@ -29,37 +39,37 @@
       <p id="challenge1" class="challegnenumbers"></p>
       <p id="point"></p>
       
-      <button type="checkbox" id="finishButtonOne" class="finishButton">Finished Task One</button>
-      <button onClick="greenPoints++;updateClickCount();">Click me</button>
+      <button type="checkbox" id="finishButtonOne" class="finishButton" onClick="greenPoints++;updateClickCount();hideOne();">Finished Task One</button>
+      
         
       <h1 class="dailyChallenge">Daily Challenge #2:</h1>
       <p id="challenge2" class="challegnenumbers"></p>
  
-      <button type="checkbox" id="finishButtonTwo" class="finishButton">Finished Task Two</button>
-      <button onClick="greenPoints++;updateClickCount();">Click me</button>
+      <button type="checkbox" id="finishButtonTwo" class="finishButton" onClick="greenPoints++;updateClickCount();hideTwo();">Finished Task Two</button>
 
       <h1 class="dailyChallenge">Daily Challenge #3:</h1>
       <p id="challenge3" class="challegnenumbers"></p>
       
+      <button type="checkbox" id="finishButtonThree" class="finishButton" onClick="greenPoints++;updateClickCount();hideThree();">Finished Task Three</button>
 
-      <h1 class="dailyChallenge">Daily Challenge #4:</h1>
+      <h1 class="
+      dailyChallenge">Daily Challenge #4:</h1>
       <p id="challenge4" class="challegnenumbers"></p>
-     
+
+     <button type="checkbox" id="finishButtonFour" class="finishButton" onClick="greenPoints++;updateClickCount();hideFour();">Finished Task Four</button>
 
       <h1 class="dailyChallenge">Daily Challenge #5:</h1>
       <p id="challenge5" class="challegnenumbers"></p>
 
+      <button type="checkbox" id="finishButtonFive" class="finishButton" onClick="greenPoints++;updateClickCount();hideFive();">Finished Task Five</button>
       
-      <div id="clickCount"></div>
-      </div>
+      
   
       <script> generateChallenge3();</script>
       
 
 
-    <div class="greenPoints">
-      <h1>Green Points:</h1>
-      <h1 id="points" onclick=realGreenPoints()></h1>
+    
       
       
 
@@ -68,10 +78,6 @@
 
     </div>
   </body>
-
-
-
-
 
 
 
