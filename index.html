@@ -1,42 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>SaveYourself</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.5">
-  <link rel="stylesheet" href="styling.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <div class="nav">
-    <a href="#home" style="float: left;">Green Points</a>
-    <a href="#profile" class="navRight">Profile</a>
-    <a href="#friends" class="navRight">Friends</a>
-  </div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Green Points</title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1671.5">
+    <link rel="stylesheet" href="styling.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
 
-  
+    <div class="nav">
+      <a href="#home" style="float: left;">Green Points</a>
+      <a href="#profile" class="navRight">Profile</a>
+      <a href="#friends" class="navRight">Friends</a>
+    </div>
 
-  <div class="challenges">
-    <h1>Daily Challenge #1:</h1>
-    <script> generateChallenge();</script>
-      <div class="challengebar">
-        <div id="challengeprogress"> </div>
-        <script>move();</script>
-      </div>
+    <h1></h1>
+
+    <div class="challenges">
+      <h1>Daily Challenge #1:</h1>
+      <p id="challenge1"></p>
+      <script> generateChallenge();</script>
+        <div class="challengebar">
+          <div id="challengeprogress"> </div>
+          <script>move();</script>
+        </div>
+        
+      <h1 class="dailyChallenge">Daily Challenge #2:</h1>
+      <p id="challenge2"></p>
+      <script> generateChallenge();</script>
+      <button type="checkbox" id="finishButtonOne" class="finishButton">Finished Task Two</button>
       
-    <h1 id="challengeOne" class="dailyChallenge">Daily Challenge #2:</h1>
-    <button type="checkbox" id="finishButtonOne" class="finishButton">Finished Task Two</button>
-    <script> generateChallenge();</script>
-    <h1 id="challengeTwo" class="dailyChallenge">Daily Challenge #3:</h1>
-    <script> generateChallenge();</script>
-    <h1 id="challengeThree" class="dailyChallenge">Daily Challenge #4:</h1>
-    <script> generateChallenge();</script>
-    <h1 id="challengeFour" class="dailyChallenge">Daily Challenge #5:</h1>
-    <script> generateChallenge();</script>
-  </div>
+      <h1 class="dailyChallenge">Daily Challenge #3:</h1>
+      <p id="challenge3"></p>
+      <script> generateChallenge();</script>
 
+      <h1 class="dailyChallenge">Daily Challenge #4:</h1>
+      <p id="challenge4"></p>
+      <script> generateChallenge();</script>
+
+      <h1 class="dailyChallenge">Daily Challenge #5:</h1>
+      <p id="challenge5"></p>
+      <script> generateChallenge();</script>
+      
+    </div>
+  </body>
+
+  <footer>
+    <p>GreenPoints 2019</p>
+  </footer>
   
 </html>
 

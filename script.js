@@ -1,14 +1,15 @@
 
-var buttonElem = document.getElementByClassName('Finishbutton');
+var buttonElem = document.querySelector('#finishButton');
 var challengeOne = document.getElementById('challengeOne');
 var challengeTwo = document.getElementById('challengeTwo');
 var challengeThree = document.getElementById('challengeThree');
 var challenges = document.getElementsByClassName('challenges');
-let challengesCompleted = 0;
+let greenPoints = 0;
 
-/* buttonElem.addEventListener("click", buttonStrike(), {
-  challengesCompleted++;
-}); */
+ buttonElem.addEventListener("click", () => {
+  greenPoints++;
+
+});
 
 
 function buttonStrike() {
@@ -38,7 +39,7 @@ function move() {
             move();
             generateChallenge();
         } 
-            width +=4 ;
+            width += 4 ;
             id.style.width = width + "px";
     }
   }
@@ -69,6 +70,14 @@ function generateChallenge() {
   ]; 
 
   var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
- document.write(randomItem); 
+  var randomItem2 = myArray[Math.floor(Math.random()*myArray.length)];
+  var randomItem3 = myArray[Math.floor(Math.random()*myArray.length)];
+  var randomItem4 = myArray[Math.floor(Math.random()*myArray.length)];
+  var randomItem5 = myArray[Math.floor(Math.random()*myArray.length)];
+  document.getElementById("challenge1").innerHTML = randomItem;
+  document.getElementById("challenge2").innerHTML = randomItem2;
+  document.getElementById("challenge3").innerHTML = randomItem3;
+  document.getElementById("challenge4").innerHTML = randomItem4;
+  document.getElementById("challenge5").innerHTML = randomItem5;
   
 }
