@@ -17,36 +17,64 @@
       <a href="#friends" class="navRight">Friends</a>
     </div>
 
-    <h1></h1>
-
+    <p id="timer">00:00</p>
+    <script>timer();</script>
+    <div class="challengebar">
+        <div id="challengeprogress"> </div>
+        <script>move();</script>
+    </div>
     <div class="challenges">
+
       <h1>Daily Challenge #1:</h1>
-      <p id="challenge1"></p>
-      <script> generateChallenge();</script>
-        <div class="challengebar">
-          <div id="challengeprogress"> </div>
-          <script>move();</script>
-        </div>
+      <p id="challenge1" class="challegnenumbers"></p>
+      <p id="point"></p>
+      
+      <button type="checkbox" id="finishButtonOne" class="finishButton">Finished Task One</button>
+      <button onClick="greenPoints++;updateClickCount();">Click me</button>
         
       <h1 class="dailyChallenge">Daily Challenge #2:</h1>
-      <p id="challenge2"></p>
-      <script> generateChallenge();</script>
-      <button type="checkbox" id="finishButtonOne" class="finishButton">Finished Task Two</button>
-      
+      <p id="challenge2" class="challegnenumbers"></p>
+ 
+      <button type="checkbox" id="finishButtonTwo" class="finishButton">Finished Task Two</button>
+      <button onClick="greenPoints++;updateClickCount();">Click me</button>
+
       <h1 class="dailyChallenge">Daily Challenge #3:</h1>
-      <p id="challenge3"></p>
-      <script> generateChallenge();</script>
+      <p id="challenge3" class="challegnenumbers"></p>
+      
 
       <h1 class="dailyChallenge">Daily Challenge #4:</h1>
-      <p id="challenge4"></p>
-      <script> generateChallenge();</script>
+      <p id="challenge4" class="challegnenumbers"></p>
+     
 
       <h1 class="dailyChallenge">Daily Challenge #5:</h1>
-      <p id="challenge5"></p>
-      <script> generateChallenge();</script>
+      <p id="challenge5" class="challegnenumbers"></p>
+
       
+      <div id="clickCount"></div>
+      </div>
+  
+      <script> generateChallenge3();</script>
+      
+
+
+    <div class="greenPoints">
+      <h1>Green Points:</h1>
+      <h1 id="points" onclick=realGreenPoints()></h1>
+      
+      
+
+      
+      
+
     </div>
   </body>
+
+
+
+
+
+
+
 
   <footer>
     <p>GreenPoints 2019</p>

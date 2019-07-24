@@ -27,21 +27,33 @@ footer {
 }
 
 .challenges {
-  margin-top: 200px;
+  margin-top: 50px;
   text-align: center;
+}
+
+.challengenumbers {
+  font-size: 35px;
 }
 
 .challengebar {
   margin: 0 auto;
-  width: 240px;
-  height: 10px;
+  width: 480px;
+  height: 20px;
   outline: 2px solid black;
 }
 
 #challengeprogress{
+  margin-top: 10px;
   width: 1px;
-  height: 10px;
+  height: 20px;
   background-color: green;
+}
+
+#timer {
+  padding-top: 100px;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
 }
 
 .nav a:hover{

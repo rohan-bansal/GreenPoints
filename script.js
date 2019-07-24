@@ -1,48 +1,54 @@
 
 var buttonElem = document.querySelector('#finishButton');
-var challengeOne = document.getElementById('challengeOne');
-var challengeTwo = document.getElementById('challengeTwo');
-var challengeThree = document.getElementById('challengeThree');
+var buttonElemBetter = document.getElementsByClassName('finishButton');
+var challengeOne = document.getElementById('challenge1');
+var challengeTwo = document.getElementById('challenge2');
+var challengeThree = document.getElementById('challenge3');
 var challenges = document.getElementsByClassName('challenges');
-let greenPoints = 0;
-
- buttonElem.addEventListener("click", () => {
-  greenPoints++;
-
-});
+var pointsText = document.getElementById('points');
+var finishButtOne = document.getElementById('finishButtonOne');
+var greenPoints = 0;
 
 
-function buttonStrike() {
-  
 
-  /*
-  event listener--
-  and getelementbyid--
-  give the h1 an id--
-  in the js getelementbyid and assign it to a variable--
-  then use .innerHTML
-  to change it if the event is triggered
-  "click" event
-*/
+function updateClickCount() {
+  document.getElementById("clickCount").innerHTML = greenPoints;
 }
 
 function move() {
     var id = document.getElementById("challengeprogress");
     var d = new Date();
     var second = d.getSeconds();
-    var width = second * 4;
+    var width = second * 8;
     id.style.width = width + "px";
-    var interval = setInterval(change, 1000)
+    var interval = setInterval(change, 125)
     function change(){
-        if (width >= 240){
+        if (width >= 480){
+            id.style.width = 480 + "px";
             clearInterval(interval);
             move();
-            generateChallenge();
+            generateChallenge3();
+            timer();
         } 
-            width += 4 ;
+             timer();
+            width += 1;
+            if (width > 480){
+                width = 480;
+            }
             id.style.width = width + "px";
     }
   }
+
+  function timer(){
+      var id = document.getElementById("timer");
+      var d = new Date();
+      var second = 60 - d.getSeconds() + "";
+      if (second < 10){
+          second = "0" + second;
+      }
+      document.getElementById("timer").innerHTML = "00:" + second;
+  }
+
 
 function generateChallenge() {
 
@@ -80,4 +86,56 @@ function generateChallenge() {
   document.getElementById("challenge4").innerHTML = randomItem4;
   document.getElementById("challenge5").innerHTML = randomItem5;
   
+}
+
+function generateChallenge3(){
+    var myArray = [
+        "Avoid single-use products, resort to reusable items",
+        "Make sure you turn off your lights when you leave a room" ,
+        "Bike, walk, or carpool your way to your destination" ,
+        "Don't waste food (compost or give it to someone in need)" ,
+        "Go vegan for one meal" ,
+        "Pick up ten pieces of trash" ,
+        "Save electricity by using natural lighting" ,
+        "Limit your water usage, re-use your water (from handwashing, showering, etc.) to water some plants" ,
+        "Support sustainable businesses" ,
+        "Inform someone about sustainability and or this website" ,
+        "Hang clothes to dry instead of using the dryer" ,
+        "Create a detailed shopping list that will avoid excess food and plastic",
+        "Take a cold shower" ,
+        "Convince someone to go vegetarian for a day" ,
+        "Install energy-efficient appliances." ,
+        "Donate or resell 6 unwanted item" ,
+        "Volunteer in an organization’s cleaning event" ,
+        "Plant something to offset your carbon footprint" ,
+        "Avoid buying clothes that were produced from fast fashion (i.e don’t buy “Made in China” products)" ,
+        "Boycott products that endanger wildlife."
+    ]; 
+    
+    var d = new Date();
+    var seed = (d.getMinutes() * d.getHours());
+    while(seed > 19){
+        seed = seed - 20;
+    }
+    if (seed < 1){
+        seed = 1;
+    }
+    document.getElementById("challenge1").innerHTML = myArray[seed++];
+     if (seed > 19){
+         seed = 1;
+     }
+    document.getElementById("challenge2").innerHTML = myArray[seed++];
+    if (seed > 19){
+        seed = 1;
+    }
+    document.getElementById("challenge3").innerHTML = myArray[seed++];
+    if (seed > 19){
+        seed = 1;
+    }
+    document.getElementById("challenge4").innerHTML = myArray[seed++];
+    if (seed > 19){
+        seed = 1;
+    }
+    document.getElementById("challenge5").innerHTML = myArray[seed++];
+
 }
