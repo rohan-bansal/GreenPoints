@@ -47,9 +47,11 @@ header {
                 url(https://cdn.wallpapersafari.com/57/33/Lbj8ls.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: auto;
 }
 
 .Title {
+    margin-top: 0;
     text-align: center;
 }
 
@@ -100,6 +102,10 @@ header {
     opacity: 0;
 }
 
+.nav {
+    animation-delay: 0.2s;
+}
+
 .Welcome {
     animation-delay: 0.6s;
 }
@@ -128,7 +134,8 @@ header {
 }
 
 .nav {
-    margin-top: 10px;
+    padding-top: 0;
+    margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
     overflow: hidden;
@@ -143,9 +150,9 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.705); 
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.705);
   }
-  
+
 .navRight {
     float: right;
 }
