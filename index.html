@@ -14,7 +14,7 @@
   <body>
 
     <div class="nav">
-        <img src="icon.png" alt="GP" id="icon">
+      <img src="icon.png" alt="GP" id="icon">
       <a href="Landing.html" style="float: left;">Green Points</a>
       <a href="index.html" class="navRight">Challenges</a>
       <a href="profile.html" class="navRight">Profile</a>
@@ -36,58 +36,48 @@
         <div id="challengeprogress"> </div>
         <script>move();</script>
     </div>
-    <div class="challenges">
-
-      <h1>Daily Challenge #1:</h1>
-      <p id="challenge1" class="challegnenumbers"></p>
-      <p id="point"></p>
-      
-      <button type="checkbox" id="finishButtonOne" class="finishButton" onClick="greenPoints++;updateClickCount();hideOne();"><img src = "https://cdn.discordapp.com/attachments/603707056209395743/604007417067601931/Finished.PNG" class = "finishButton"></button>
-      
+    <div id="boxcontainer1">
+        <div id="box1">
+        <h1>Daily Challenge #1:</h1>
+        <p id="challenge1" class="challengenumbers"></p>
+        <p id="point"></p>
+        <button type="checkbox" id="finishButtonOne" class="finishButton" onClick="greenPoints++;updateClickCount();hideOne();"><img src = "https://media.discordapp.net/attachments/603707056209395743/604008724012597250/Finished.PNG" class = "finishButton"></button>
+        </div>
+          
+        <div id="box2">
+        <h1 class="dailyChallenge">Daily Challenge #2:</h1>
+        <p id="challenge2" class="challengenumbers"></p>
+        <button type="checkbox" id="finishButtonTwo" class="finishButton" onClick="greenPoints++;updateClickCount();hideTwo();"><img src = "https://media.discordapp.net/attachments/603707056209395743/604008724012597250/Finished.PNG" class = "finishButton"></button>
+        </div>
         
-      <h1 class="dailyChallenge">Daily Challenge #2:</h1>
-      <p id="challenge2" class="challegnenumbers"></p>
- 
-      <button type="checkbox" id="finishButtonTwo" class="finishButton" onClick="greenPoints++;updateClickCount();hideTwo();">Finished Task Two</button>
+        <div id="box3">
+        <h1 class="dailyChallenge">Daily Challenge #3:</h1>
+        <p id="challenge3" class="challengenumbers"></p>
+        <button type="checkbox" id="finishButtonThree" class="finishButton" onClick="greenPoints++;updateClickCount();hideThree();"><img src = "https://media.discordapp.net/attachments/603707056209395743/604008724012597250/Finished.PNG" class = "finishButton"></button>
+        </div>
+      </div>
 
-      <h1 class="dailyChallenge">Daily Challenge #3:</h1>
-      <p id="challenge3" class="challegnenumbers"></p>
-      
-      <button type="checkbox" id="finishButtonThree" class="finishButton" onClick="greenPoints++;updateClickCount();hideThree();">Finished Task Three</button>
+      <div id="boxcontainer2">
+        <div id="box4">
+        <h1 class="dailyChallenge">Daily Challenge #4:</h1>
+        <p id="challenge4" class="challengenumbers"></p>
+        <button type="checkbox" id="finishButtonFour" class="finishButton" onClick="greenPoints++;updateClickCount();hideFour();"><img src = "https://media.discordapp.net/attachments/603707056209395743/604008724012597250/Finished.PNG" class = "finishButton"></button>
+      </div>
 
-      <h1 class="
-      dailyChallenge">Daily Challenge #4:</h1>
-      <p id="challenge4" class="challegnenumbers"></p>
-
-     <button type="checkbox" id="finishButtonFour" class="finishButton" onClick="greenPoints++;updateClickCount();hideFour();">Finished Task Four</button>
-
-      <h1 class="dailyChallenge">Daily Challenge #5:</h1>
-      <p id="challenge5" class="challegnenumbers"></p>
-
-      <button type="checkbox" id="finishButtonFive" class="finishButton" onClick="greenPoints++;updateClickCount();hideFive();">Finished Task Five</button>
-      
-      
-  
-      <script> generateChallenge3();</script>
-      
-
-
-    
-      
-      
-
-      
-      
-
+      <div id="box5">
+        <h1 class="dailyChallenge">Daily Challenge #5:</h1>
+        <p id="challenge5" class="challengenumbers"></p>
+        <button type="checkbox" id="finishButtonFive" class="finishButton" onClick="greenPoints++;updateClickCount();hideFive();"><img src = "https://media.discordapp.net/attachments/603707056209395743/604008724012597250/Finished.PNG" class = "finishButton"></button>
+        </div>
     </div>
+      
+      <script> generateChallenge3();</script>
+
   </body>
 
 
 
 
-  <footer>
-    <p>GreenPoints 2019</p>
-  </footer>
   
 </html>
 

@@ -13,7 +13,7 @@ var pointsText = document.getElementById('points');
 //var finishButtonFour = document.getElementById('finishButtonFour');
 //var finishButtonFive = document.getElementById('finishButtonFive');
 var greenPoints = 0;
-
+//url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1610/Nature-forest-trees-pines-fog_1920x1080.jpg) no-repeat center;
 
 
 function updateClickCount() {
@@ -149,31 +149,31 @@ function generateChallenge3(){
 function hideOne(){
     document.getElementById("challenge1").innerHTML += " ✓";
     document.getElementById('finishButtonOne').style.visibility = "hidden";
-    document.getElementById('challenge1').style.color = "green";
+    document.getElementById('challenge1').style.color = "#7befb2";
 }
 
 function hideTwo(){
     document.getElementById("challenge2").innerHTML += " ✓";
     document.getElementById('finishButtonTwo').style.visibility = "hidden";
-    document.getElementById('challenge2').style.color = "green";
+    document.getElementById('challenge2').style.color = "#7befb2";
 }
 
 function hideThree(){
     document.getElementById("challenge3").innerHTML += " ✓";
     document.getElementById('finishButtonThree').style.visibility = "hidden";
-    document.getElementById('challenge3').style.color = "green";
+    document.getElementById('challenge3').style.color = "#7befb2";
 }
 
 function hideFour(){
     document.getElementById("challenge4").innerHTML += " ✓";
     document.getElementById('finishButtonFour').style.visibility = 'hidden';
-    document.getElementById('challenge4').style.color = "green";
+    document.getElementById('challenge4').style.color = "#7befb2";
 }
 
 function hideFive(){
     document.getElementById("challenge5").innerHTML += " ✓";
     document.getElementById('finishButtonFive').style.visibility = 'hidden';
-    document.getElementById('challenge5').style.color = "green";
+    document.getElementById('challenge5').style.color = "#7befb2";
 }
 
 function showAll(){
@@ -182,9 +182,9 @@ function showAll(){
     document.getElementById('finishButtonThree').style.visibility = 'visible';
     document.getElementById('finishButtonFour').style.visibility = 'visible';
     document.getElementById('finishButtonFive').style.visibility = 'visible';
-    document.getElementById('challenge1').style.color = "black";
-    document.getElementById('challenge2').style.color = "black";
-    document.getElementById('challenge3').style.color = "black";
-    document.getElementById('challenge4').style.color = "black";
-    document.getElementById('challenge5').style.color = "black";
+    document.getElementById('challenge1').style.color = "white";
+    document.getElementById('challenge2').style.color = "white";
+    document.getElementById('challenge3').style.color = "white";
+    document.getElementById('challenge4').style.color = "white";
+    document.getElementById('challenge5').style.color = "white";
 }
