@@ -3,6 +3,11 @@
 }
 
 body {
+    background: linear-gradient(#000000, transparent 50%),
+                linear-gradient(0deg, #000000, transparent 75%),
+                url(https://cdn.wallpapersafari.com/57/33/Lbj8ls.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     /*font-family: 'Josefin Slab', serif;*/
     font-family: 'Raleway', sans-serif;
@@ -20,7 +25,7 @@ html {
 }
 
 .button:hover {
-    width: 21%;
+    width: 25%;
 }
 
 .down {
@@ -34,8 +39,8 @@ html {
 }
 
 header {
-    padding-top: 50px;
     min-height: 100vh;
+    margin-top: 10px;
 
     background: linear-gradient(#000000, transparent 50%),
                 linear-gradient(0deg, #000000, transparent 75%),
@@ -49,6 +54,7 @@ header {
 }
 
 .Welcome {
+    margin-top: 50px;
     font-size: 50px;
     font-weight: bolder;
     margin-left: -700px;
@@ -122,18 +128,28 @@ header {
 }
 
 .nav {
+     margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
-    background-color: #D3D3D3;
-  }
-  .nav a {
+    background-color: rgba(0,0,0,.5);
+}
+.nav a {
     color: #32CD32;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
     text-shadow: 1px 1px black;
-  }
+}
   
-  .navRight {
+.navRight {
     float: right;
-  }
+}
+
+#icon {
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+    width: 50px;
+    height: 50px;
+ }
