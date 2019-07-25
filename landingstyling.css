@@ -14,7 +14,6 @@ html {
 
 .button {
     border-radius: 10px;
-    margin-top: 200px;
     width: 20%;
     height: auto;
     transition: width .5s;
@@ -50,7 +49,6 @@ header {
 }
 
 .Welcome {
-    margin-top: 150px;
     font-size: 50px;
     font-weight: bolder;
     margin-left: -700px;
@@ -58,7 +56,7 @@ header {
 }
 
 .GreenPoints {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 100px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
@@ -122,3 +120,20 @@ header {
       transform: none;
     }
 }
+
+.nav {
+    overflow: hidden;
+    background-color: #D3D3D3;
+  }
+  .nav a {
+    color: #32CD32;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+  }
+  
+  .navRight {
+    float: right;
+  }
